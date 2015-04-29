@@ -3,7 +3,9 @@
     <head>
         <title>SyntaxHighlighter</title>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/highlighter/style.css">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     </head>
     <body>
@@ -11,16 +13,25 @@
         <div class="container">
             <article>
                 <h2>Syntax Highlighter v0.01</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eius delectus temporibus quia, doloremque rem vel vitae consectetur optio, a incidunt porro corporis totam recusandae repellat distinctio mollitia reiciendis nemo!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eius delectus temporibus quia, doloremque rem vel vitae consectetur optio, a incidunt porro corporis totam recusandae repellat distinctio mollitia reiciendis nemo!</p>    
                 
-                <div id="code">
-                    
+                <div id="code" class="java">public static void main(String args[]){
+                    *tab*System.out.println("hello world");
+                    *tab*int someString = 10;
+                    *tab*double someDouble = 10.0;
+                    *tab*boolean somebool = false;
+                    *tab*// This is a comment
+                    *tab*String stuff = "Hello World"; // also is also a comment
+                    *tab*System.out.println(stuff);
+                }
                 </div>
+                
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At magni, velit numquam maiores in quaerat amet vero fugit dicta beatae? Necessitatibus distinctio accusamus consectetur provident nihil nulla! Impedit, omnis, quia?</p>
                 
             </article>
         </div>
         
+        <script src="assets/highlighter/highlighter.js"></script>
     </body>
 </html>
